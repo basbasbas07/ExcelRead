@@ -40,8 +40,7 @@ public class Shift_GUI {
 
     private Shift_GUI() {
         jChooser = new JFileChooser();
-        String[] mails = new String[]{"GTAgileLoginWarriors@garantibbva.com.tr", "DuyguKir@garantibbva.com.tr", "EnginM@garantibbva.com.tr", "HuseyinMer@garantibbva.com.tr",
-                "MuzeyyenK@garantibbva.com.tr", "SahraO@garantibbva.com.tr", "TulinS@garantibbva.com.tr", "TubaS@garantibbva.com.tr", "Enter New e-mail Address"};
+        String[] mails = new String[]{"***************************************************************************"};
         for (String x :
                 mails) {
             toMail.addItem(x);
@@ -121,13 +120,13 @@ public class Shift_GUI {
     }
 
     private void sendMail() {
-        String userName = "StjBarisB@garantibbva.com.tr";
-        String password = "Bas637098+";
+        String userName = "********************";
+        String password = "********************";
         Properties prop = new Properties();
-        prop.put("mail.smtp.host", "smtp.garanti.com.tr");
-        prop.put("mail.smtp.port", "587");
-        prop.put("mail.smtp.auth", "true");
-        prop.put("mail.smtp.starttls.enable", "true");
+        prop.put("mail.smtp.host", "**********************");
+        prop.put("mail.smtp.port", "**************");
+        prop.put("mail.smtp.auth", "****");
+        prop.put("mail.smtp.starttls.enable", "*****");
         Session session = Session.getInstance(prop,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
@@ -137,7 +136,7 @@ public class Shift_GUI {
                 });
         try {
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("StjBarisB@garantibbva.com.tr"));
+            message.setFrom(new InternetAddress("*****************************"));
             message.setRecipients(
                     Message.RecipientType.TO,
                     InternetAddress.parse(String.valueOf(toMail.getSelectedItem()))
