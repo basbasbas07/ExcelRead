@@ -40,7 +40,7 @@ public class Shift_GUI {
 
     private Shift_GUI() {
         jChooser = new JFileChooser();
-        String[] mails = new String[]{"***************************************************************************"};
+        String[] mails = new String[]{"deneme"};
         for (String x :
                 mails) {
             toMail.addItem(x);
